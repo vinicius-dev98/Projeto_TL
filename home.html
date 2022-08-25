@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Gerencimento TechLead</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">        
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <h1 class="tituloHome">GERENCIAMENTO DE LIVROS</h1>
+            <button class="botaoAdicionarlivros" value="Adicionar livro" onclick="adicionarlivros()">Adicionar livro</button>
+            <div class="main-login2">
+                <div class="book-box">
+                    <table>
+                        <thead>
+                            <tr class="cabecalho-table">
+                                <th>Nome do livro</th>
+                                <th>Autor</th>
+                                <th>Gênero</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tabela-livros"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="modalCadastroLivros">
+                <section class="container">
+                    <div class="cabecalho-modal">
+                        <h2 id="titulo-form">Adicionar novo livro</h2>
+                        <div onclick="fechar()" class="btn-fechar">X</div>
+                    </div>
+                   
+                    <form class="form-adiciona-livro">                    
+                        <label for="nome">Nome do livro:</label>
+                        <input id="nome" name="nome" type="text" placeholder="digite o nome do seu livro" >
+                    
+                        <label for="peso">Autor:</label>
+                        <input required id="peso" name="autor" type="text" placeholder="digite o autor do seu livro">
+                        
+                        <label for="altura">Gênero:</label>
+                        <select required id="genero" name="genero" type="text" placeholder="Selecione o gênero do seu livro" >
+                            <option>Fantasia</option>
+                            <option>Drama</option>
+                            <option>Autoajuda</option>
+                            <option>Biografia</option>
+                            <option>Sci-fi</option>
+                            <option>Ficção</option>
+                        </select>     
+
+                        <input class="btn-cadastroLivro" name="" type="submit"  value="Cadastrar livro">
+                    
+                    </form>
+                </section>
+            </div>
+            <script src="adicionarLivros.js"></script>     
+        </main>
+        
+    </body>

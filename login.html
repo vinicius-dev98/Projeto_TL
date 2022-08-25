@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Biblioteca TechLead</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="main-login">
+            <div class="right-login">
+                <div class="login">
+                    <h1>LOGIN</h1>
+                    <form>
+                        <label for="Username">Username</label>
+                        <input type="text" name="Username" id="Username"  placeholder="Insira seu CPF">
+                        <label for="password">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Insira sua senha">
+                        <a href="cadastro.html" id="cadastrar-se">Cadastrar-se</a>
+                        <a href="esquecerSenha.html" id="forgot-password">Esqueceu a senha?</a>
+                        
+                    </form>
+                    <input type="submit" value="login" id="btnLogin "onclick="logar();" >
+
+                    <script src="login.js"></script>
+                </div>
+            </div>
+
+            <div class="login-left">
+                <h1>Faça login<br>para acessar nosso conteúdo!</h1>
+                <img src="leitor.svg" class="leitor-img" alt="leitor">
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

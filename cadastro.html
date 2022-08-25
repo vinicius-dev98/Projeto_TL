@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Biblioteca TechLead</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <main>
+        <div class="main-formulario">
+            <div class="formulario-cadastro">
+                <form>
+                    <h1>Cadastre-se</h1>
+                    <label>CPF:</label>
+                    <input type="text" oninput="mascara(this)" id="Username" maxlength="14" required placeholder="Insira seu CPF">
+                    <label>E-mail:</label>
+                    <input type="email" id="email" required placeholder="Insira seu E-mail">
+                    <label>Nome:</label>
+                    <input type="text" id="nome" required placeholder="Insira seu Nome">
+                    <label>Sobrenome:</label>
+                    <input type="text" id="sobrenome" required placeholder="Insira seu Sobrenome">
+                    <label>Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" placeholder="Insira sua Data de nascimento">
+                    <label>Senha:</label>
+                    <input type="password" id="Senha" placeholder="Insira sua senha">
+                    <label>Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" placeholder="Confirme sua senha">
+                    <input type="submit" onclick="cadastroSalvo()" value="Cadastrar-se">
+
+                    <script>
+                        function cadastroSalvo(){
+                            location.href = "cadastroSalvo.html"
+                        };
+                    </script>
+                    <script src="cadastro.js"></script>
+
+                </form>
+            </div>
+            <div class="formulario-right">
+                <h1>Seja Bem-Vindo!</h1>
+                <img src="sign-up.svg" class="signup-img" alt="Registro">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
